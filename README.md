@@ -1,4 +1,4 @@
-# Модуль 4.2 Jenkins
+# Модуль 4.2 Github Actions
 
 Целью данного модуля является построение простого сборочного конвеера с использованием [Github Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions). 
 
