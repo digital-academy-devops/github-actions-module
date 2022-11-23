@@ -13,7 +13,8 @@
 1. Добавьте [workflow](https://docs.github.com/en/actions/using-workflows) для сборки [образов тестового приложения](https://github.com/digital-academy-devops/docker-module#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5):
    1. builder образа;
    1. release образа.
-  Для сборки образов используйте [официальный action](https://github.com/marketplace/actions/build-and-push-docker-images) (описан в [документации Docker](https://docs.docker.com/build/ci/github-actions/)).
+   
+   Для сборки образов используйте [официальный action](https://github.com/marketplace/actions/build-and-push-docker-images) (описан в [документации Docker](https://docs.docker.com/build/ci/github-actions/)).
 1. Workflow должен запускаться (поле [on](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on), [описание модели запуска workflow](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow)) при добавлении изменений в любую ветку репозитория (событие [push](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#push)), а также иметь возможность ручного запуска (событие [workflow_dispatch](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch)).
 1. Тег образов определяется следующим образом:
    - при автоматическом запуске, в качестве тега используется имя ветки/тега для которого запустилась сборка;
@@ -26,6 +27,7 @@
 
 ## Пример выполнения задания
 Пример реализации workflow для тестового приложения - https://github.com/digital-academy-devops/docker-example/pull/6
+
 Включает в себя:
 - Workflow для сборки тестового приложения - [.github/workflows/ci.yaml](https://github.com/digital-academy-devops/docker-example/pull/6/files#diff-944291df2c9c06359d37cc8833d182d705c9e8c3108e7cfe132d61a06e9133dd).
   - использует [официальный action](https://github.com/marketplace/actions/build-and-push-docker-images).
