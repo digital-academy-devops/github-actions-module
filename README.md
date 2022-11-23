@@ -22,7 +22,7 @@
 ### Дополнительно
 1. Используйте [matrix](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs) для сборки обоих образов с использованием одного набора шагов.
 1. Добавьте [собственный action](https://docs.github.com/en/actions/creating-actions/about-custom-actions) типа [composite](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) для запуска сборки образов, который будет использоваться в workflow вместо официального.
-1. Зарегистрируйтесь на [Dockerhub](https://hub.docker.com/) и добавьте в workflow push образа, при сборке из релизных тегов (описано в [документации Docker](https://docs.docker.com/build/ci/github-actions/)).
+1. Зарегистрируйтесь на [Dockerhub](https://hub.docker.com/) и добавьте в пайплайн push образа при сборке из релизных тегов (описано в [документации Docker](https://docs.docker.com/build/ci/github-actions/)).
 
 ## Пример выполнения задания
 Пример реализации workflow для тестового приложения - https://github.com/digital-academy-devops/docker-example/pull/6
